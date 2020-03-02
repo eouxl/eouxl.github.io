@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: 
+url: https://eouxl.github.io
 date_format: "ordinal"
 title: 木子
 subtitle: "大脑想的越远，现实才会走的越稳"
