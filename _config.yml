@@ -4,10 +4,10 @@
 baseurl:
 url: 
 date_format: "ordinal"
-title: 小李
+title: 木子
 subtitle: "从心出发 重新出发"
-description: "小李的个人博客"
-keywords: 小李, 银河开天, 开天, eouxl
+description: "木子的个人博客"
+keywords: 木子, 银河开天, 开天, eouxl
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 1
@@ -15,7 +15,7 @@ side_bar_repo_limit: 1
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Xiao Lee
+author: MuZiLee
 organization: 
 organization_url: 
 github_username: eouxl
