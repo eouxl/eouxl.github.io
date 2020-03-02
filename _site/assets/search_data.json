@@ -5,28 +5,28 @@
   
     {
       "title"    : "页面没有找到",
-      "url"      : "http://localhost:4000/404.html"
+      "url"      : "/404.html"
     } ,
   
   
   
     {
       "title"    : "About",
-      "url"      : "http://localhost:4000/about/"
+      "url"      : "/about/"
     } ,
   
   
   
     {
       "title"    : "归档",
-      "url"      : "http://localhost:4000/archives/"
+      "url"      : "/archives/"
     } ,
   
   
   
     {
       "title"    : "Categories",
-      "url"      : "http://localhost:4000/categories/"
+      "url"      : "/categories/"
     } ,
   
   
@@ -35,14 +35,14 @@
   
     {
       "title"    : "Links",
-      "url"      : "http://localhost:4000/links/"
+      "url"      : "/links/"
     } ,
   
   
   
     {
       "title"    : "Open Source Projects",
-      "url"      : "http://localhost:4000/open-source/"
+      "url"      : "/open-source/"
     } ,
   
   
@@ -51,7 +51,7 @@
   
     {
       "title"    : "Wiki",
-      "url"      : "http://localhost:4000/wiki/"
+      "url"      : "/wiki/"
     } ,
   
   
@@ -66,10 +66,17 @@
 
   
     {
+      "title"    : "test page",
+      "category" : "test",
+      
+      "url"      : "/2020/03/02/test/"
+    } ,
+  
+    {
       "title"    : "Wiki Template",
       "category" : "cate1",
       
-      "url"      : "http://localhost:4000/wiki/template/"
+      "url"      : "/wiki/template/"
     } 
   
 ]
