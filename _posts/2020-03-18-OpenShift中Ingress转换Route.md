@@ -6,7 +6,7 @@ description: openshift中ingress自动转换route
 keywords: openshift,ingress,route
 ---
 
-#### 1. 源头
+### 1. 源头
 在openshift中的route添加域名证书，必须要把证书及私钥写进route yaml的字段中，如下：
 
 ```yaml
@@ -71,7 +71,7 @@ spec:
 ```
 在ingress中引用secret的名称，即可将证书与该域名绑定。
 
-#### 2. 解决
+### 2. 解决
 在openshift官网中，发现可以将ingress资源转为route：
 
 https://docs.openshift.com/container-platform/3.11/architecture/networking/routes.html#architecture-routes-support-for-ingress
@@ -120,13 +120,13 @@ spec:
      targetPort: 80
 ```
 
-#### 3. 问题
+### 3. 问题
 
 但是，使用官方例子，在openshift创建完ingress之后，查看route，并未生成route。以为是要装插件，或有什么使用条件。之后，就是一顿查，通过搜寻各种网站，翻看官网，并未发现其它任何资料。
 
 然后，看到上面说是通过controller来进行自动转换的。所以，决定把openshift源码clone下来，研究下ingress controller是怎么进行转换的。
 
-#### 4. 分析
+### 4. 分析
 
 克隆下来openshift源码（https://github.com/openshift/origin ）,切换到release-3.11分支，找到ingress controller逻辑，如下：
 
@@ -262,7 +262,7 @@ func targetPortForService(namespace string, path *extensionsv1beta1.HTTPIngressP
 }
 ```
 
-#### 5. 结论
+### 5. 结论
 
 综上，在ingress转换route的过程中，有一些限制条件：
 1. ingress规则中必须要有host、http以及serviceName；
